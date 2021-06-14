@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export PROJECT=${PWD##*/}
+export SCRIPTS_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+source ${SCRIPTS_ROOT}/__helpers.sh
+source ${SCRIPTS_ROOT}/__echo.sh
+source ${SCRIPTS_ROOT}/__gitignore.sh
+source ${SCRIPTS_ROOT}/__vscode_settings.sh
